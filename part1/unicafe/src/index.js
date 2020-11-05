@@ -56,14 +56,6 @@ const App = ()=>{
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  // const calculateBackground = ()=>{
-  //  let total = good + neutral + bad;
-  //  let average = (total === 0)?0:((good - bad)/total);
-  //  let positive = (total === 0)?0:(good/total);
-  //  let object = {a: total, b: average, c: positive};
-  //  return object;
-  // }
-
   const AddToGood = ()=>{
     setGood(good+1);
   };

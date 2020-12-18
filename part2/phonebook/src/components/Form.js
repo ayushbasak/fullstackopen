@@ -10,18 +10,18 @@ const Input = ({driver, placeholder, value})=>{
 const Button = ({event, type, text})=>{
     return (
         <>
-        <button onClick = {event} type = {type}>{text}</button>
+        <button className = "push" onClick = {event} type = {type}>{text}</button>
         </>
     );
 }
 const Form = (props)=>{
     return(
-        <div>
+        <div className = "form">
             <Header text = "Phonebook" />
             <form>
             <Input driver = {props.changeName} placeholder = "Enter Name" value = {props.currName}/>
             <Input driver = {props.changeNumber} placeholder = "Enter Phone Number" value = {props.currPhone}/>
-            <div class = "flow">
+            <div className = "flow">
                 <Button event = {props.addToList} text = "Add to List" type = "submit" />
                 <Button event = {props.clearList} text = "Clear List" type = "submit" />
             </div>
